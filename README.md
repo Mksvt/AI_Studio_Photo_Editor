@@ -1,29 +1,89 @@
-# Create T3 App
+# AI Studio
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+AI Studio is a modern SaaS platform for image editing that leverages artificial intelligence to automate processes such as background removal, quality enhancement, and smart cropping. By integrating cutting-edge technologies like Next.js 15, Neon, Polar, Better Auth, and ImageKit, the platform delivers a secure, fast, and user-friendly experience.
 
-## What's next? How do I make an app with this?
+## 📌 Key Features
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- 🔐 **Secure Authentication:** Support for email, password, and social logins with Better Auth.
+- 💳 **Payments and Credits:** Integration with Polar for managing payments and credits.
+- 🤖 **AI-Powered Editing:** Background removal, quality enhancement, and smart cropping of images.
+- 📁 **Project Management:** Save editing history and manage projects.
+- 👤 **User Dashboard:** Manage invoices, credits, and payment information.
+- 📱 **Responsive Design:** A modern interface that works on all devices.
+- ⚡ **Real-Time Updates:** Instant status updates and credit deductions.
+- 🎨 **Professional Interface:** Smooth transitions and aesthetic design.
+- ☁️ **Serverless Deployment:** Scalable hosting solution on Vercel.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## 🛠️ Technologies
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- **Frontend:** Next.js 15 (App Router + Server Actions)
+- **Styling:** Tailwind CSS + shadcn/ui
+- **Database:** Neon PostgreSQL + Prisma ORM
+- **Payments:** Polar
+- **Authentication:** Better Auth
+- **Image Processing:** ImageKit (storage, optimization, and AI features)
+- **Deployment:** Vercel
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/sahandghavidel/ai-image-editor-saas-app.git
+   cd ai-image-editor-saas-app
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Set up environment variables:**
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+   ```bash
+   cp .env.example .env.local
+   ```
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+   Fill in the variables for Neon, ImageKit, Polar, and Better Auth.
 
-## How do I deploy this?
+4. **Set up the database:**
+   ```bash
+   npx prisma migrate dev
+   ```
+5. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## 📖 What You'll Learn
+
+- Modern Full-Stack Development with Next.js 15.
+- SaaS Application Architecture and best practices.
+- AI Integration for image processing with ImageKit.
+- Payment Systems Implementation using Polar.
+- Advanced Authentication with Better Auth.
+- Database Design and Management with Prisma.
+- Serverless Deployment strategies.
+
+## 🎯 Future Ideas
+
+- Add collaboration features for team-based image editing.
+- Integrate with other AI services for text-to-image generation.
+- Expand editing functionality: filters, retouching, color adjustments.
+- Support for multilingual interfaces to reach a global audience.
+- Develop a mobile app for convenient platform access.
+
+## 🤝 How to Contribute
+
+We welcome your ideas and contributions! Feel free to submit a Pull Request or create Issues.
+
+## 📝 License
+
+This project is open-source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- **ImageKit** for powerful image processing APIs.
+- **Neon** for reliable PostgreSQL hosting.
+- **Polar** for seamless payment integration.
+- **Better Auth** for robust authentication systems.
+
+If you enjoyed this project, leave a ⭐ on GitHub!
